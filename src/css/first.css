@@ -1,0 +1,44 @@
+
+#first {
+	margin: 0 auto;
+
+	position: relative;
+}
+
+#first > div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#block {
+	position : absolute;
+	left: 270px;
+	animation: drop steps(11, end) 3s forwards;
+	z-index : 1;
+}
+#line {
+	position : absolute;
+	top : 240px;
+	opacity : 0;
+	animation: erase steps(2, end) 1s forwards;
+	animation-delay : 3s;
+}
+
+
+@keyframes drop {
+  0% {}
+  100% { transform: translateY(330px); }
+}
+@keyframes erase {
+  0% {
+	z-index: 2;
+	opacity : 1;
+  }
+  100% {
+	transform: translateY(60px);
+	z-index: 2;
+	opacity : 1;
+  }
+}

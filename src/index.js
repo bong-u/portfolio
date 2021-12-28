@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/index.css';
-import { Quote } from './quote'
+import { First } from './first'
 import { Project } from './project'
 import { Career } from './career'
 
 ReactDOM.render(
 	<div id="pages">
-		<Quote/>
+		<First/>
 		<Career/>
 		<Project/>
 	</div>,

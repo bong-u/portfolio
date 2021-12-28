@@ -34,8 +34,8 @@ class Project extends React.Component {
 				</div>
 				
 				<div>
-					<a className = "item" href="https://bong-u.github.io/bong-u/game/tetris">
-						<img src="/tetris.png" alt=""></img>
+					<a className = "item" href="https://bong-u.github.io/game/tetris">
+						<img src="tetris.png" alt=""></img>
 						<span>REST-DRF</span>
 					</a>
 				</div>
