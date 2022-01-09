@@ -1,34 +1,36 @@
 
 #projects {
-	padding : 50px;
+	padding : 50px 200px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap : 30px;
 }
 
-#projects > div {
-	width : 1200px;
-	margin : 10px;
-}
-
-#projects > div > .item {
-	display: block;
+#projects > .item {
     color: inherit;
+	width : 100%;
 
     position: relative;
 	opacity: 0.3;
 	transition: opacity 1s;
 	
-}
-#projects > div > .item:hover{
-	opacity : 1;
-}
-#projects > div > .item > span {
 	font-size : 30px;
-	position: absolute;
-    right: 0px;
-    line-height: 100px;
 }
-#projects > div > .item > img {
+#projects > .item:hover{ opacity : 1; }
+
+#projects > .item > #project_cover { float : left; }
+#projects > .item > .content_area { height : 120px; }
+#projects > .item > .content_area > .name {
+	float : right;
+	margin : 5px;
+}
+#projects > .item > .content_area > .tools {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#projects > .item > .content_area > .tools > * {
+	margin : 5px;
 }

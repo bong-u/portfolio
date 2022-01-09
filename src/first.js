@@ -4,7 +4,6 @@ import './css/first.css';
 class First extends React.Component {
 	nextPage = () => {
 		setTimeout(() => {
-			console.log (document.getElementById('pages').scrollTop)
 			if (document.getElementById('pages').scrollTop > 500)
 				return;
 			document.getElementById('pages').scrollTo({
